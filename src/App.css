@@ -1,38 +1,64 @@
-.App {
+#app-body {
   text-align: center;
+  background: url(https://media.gettyimages.com/photos/multiple-question-marks-in-speech-bubbles-picture-id1192875652?b=1&k=20&m=1192875652&s=170667a&w=0&h=nRWZTSMKAzPXc1n70X_-QrHMUwf2iuFhxCBgV8L-n8Y=);
+  background-size: 100vw;
+  min-height:100vw;
+  width: 100vw;
+  margin: auto;
+  background-repeat: no-repeat;
+  overflow: hidden;
+   }
+
+#app-header {padding:20px;}
+
+#quiz-in-header {
+  font-family: Rampart One, Monoton;
+  font-size: 100px;
+  color: black;
+  background: white;
+  margin-left: 400px;
+  margin-right: 400px;
+  border-radius: 100px;
+  border: black;
+  border-style: solid;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#dropdown {
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#quest-cat {
+  background: white;
+  margin-left: 20%;
+  margin-right:20%;
+  padding: 1%;
+  margin-top: 5%;
+  border-style: solid;
+  border-color: black;
+  border-radius: 70px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#button {
+  background: white;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 10px;
+  border-style: solid;
+  border-color: black;
 }
 
-.App-link {
-  color: #61dafb;
-}
+#answer {
+  background: white;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 10px;
+  border-style: solid;
+  border-color: black;
+  margin-left: 30%;
+  margin-right:30%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

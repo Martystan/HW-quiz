@@ -13,7 +13,7 @@ const QuestionSelector = ({quizQuestions, onQuestionSelected}) => {
 
 
     return(
-        <select defaultValue ="" onChange= {handleChange}>
+        <select id = "dropdown" defaultValue ="" onChange= {handleChange}>
             <option value ="" selected>Pick a question</option>
             {questionOptions}
         </select>
