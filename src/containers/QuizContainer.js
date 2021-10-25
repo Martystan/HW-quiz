@@ -6,7 +6,7 @@ import Answer from "../components/Answer";
 const QuizContainer = () =>{
     const [questions, setQuestions] = useState([]);
     const[selectedQuestion, setSelectedQuestion] = useState(null)
-    const[answers, SetAnswers] = useState([])
+    const[answer, setAnswer] = useState(null)
     
 
     function fetchQuestions(){
@@ -22,8 +22,8 @@ const QuizContainer = () =>{
     }
 
     const showAnswer = () =>{
-        const updatedAnswer = [...answers, selectedQuestion];
-        SetAnswers(updatedAnswer);
+        
+        setAnswer(selectedQuestion.answer)
     }
 
 
@@ -32,7 +32,7 @@ const QuizContainer = () =>{
         <>
         <QuestionSelector quizQuestions = {questions} onQuestionSelected = {onQuestionSelected}/>
         {selectedQuestion ? <QuestionDetail selectedQuestion = {selectedQuestion} showAnswer = {showAnswer}/> : null}
-        <Answer answers = {answers}/>
+        {answer ? <Answer answer = {answer}/>:null}
         </>
     )
 }
