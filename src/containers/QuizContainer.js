@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import QuestionSelector from "../components/QuestionSelector";
 import QuestionDetail from "../components/QuestionDetail";
 import Answer from "../components/Answer";
+import ShowQuestion from "../components/ShowQuestion";
 
 const QuizContainer = () =>{
     const [questions, setQuestions] = useState([]);
@@ -26,6 +27,10 @@ const QuizContainer = () =>{
         setAnswer(selectedQuestion.answer)
     }
 
+    const onStarClick =()=>{
+        
+    }
+
 
 
     return(
@@ -33,6 +38,7 @@ const QuizContainer = () =>{
         <QuestionSelector quizQuestions = {questions} onQuestionSelected = {onQuestionSelected}/>
         {selectedQuestion ? <QuestionDetail selectedQuestion = {selectedQuestion} showAnswer = {showAnswer}/> : null}
         {answer ? <Answer answer = {answer}/>:null}
+        <img src="https://cdn4.iconfinder.com/data/icons/nature-1-8/32/36-512.png"></img>
         </>
     )
 }
